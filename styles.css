@@ -1,0 +1,79 @@
+body{
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    color: hsl(0, 0%, 100%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: hsl(216, 50%, 16%);
+    max-width: 15rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 3px rgb(18, 18, 18);
+}
+.title{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 18px;
+}
+.subtitle {
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.nft{
+    min-width: 13rem;
+    min-height: 13rem;
+    margin-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 1.5rem;
+}
+.avatar{
+    width: 2rem;
+    height: 2rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;    
+}
+.left{ 
+     /* left is not a container  */
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    padding-left: 18px;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+h3{
+    padding-left: 10px;
+}
+img{
+    height: 20px; 
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    padding-right: 18px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.person{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 0.5rem;
+    padding-right: 18px;
+}
