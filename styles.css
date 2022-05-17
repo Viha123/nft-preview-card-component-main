@@ -111,11 +111,12 @@ a:hover{
     z-index: 1;
     height: 0px;
     width: 100%;
-    
+    transform: translateX(47%);
     border-radius: 1.5rem;
 }
 .view{
     opacity: 0;
+
     object-fit: scale-down;
     object-position: center center;
     border-radius: 0.095rem;
