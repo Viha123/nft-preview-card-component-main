@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
 body{
     background: hsl(217, 54%, 11%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Outfit', sans-serif;
     color: hsl(0, 0%, 100%);
     padding-left: 50px;
     padding-right: 50px;
@@ -13,40 +14,35 @@ body{
     display: flex;
     flex-direction: column;
     background: hsl(216, 50%, 16%);
-    max-width: 15rem;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 3px rgb(18, 18, 18);
+    max-width: 20rem;
+    border-radius: 1.5rem;
 }
 .title{
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-left: 18px;
 }
 .subtitle {
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding-left: 18px;
     padding-right: 18px;
+    color:hsl(215, 51%, 70%);
 }
-.nft{
-    min-width: 13rem;
-    min-height: 13rem;
-    margin-top: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border-radius: 1.5rem;
-}
+
 .avatar{
     width: 2rem;
     height: 2rem;
+    border: 1px solid white;
+    border-radius: 1rem;
 }
 .footer{
     display: flex;
     justify-content: space-between;
-    font-size: 0.5rem;    
+    font-size: 1rem;    
 }
 .left{ 
-     /* left is not a container  */
+     /* left is now a container  */
     display: flex;
     flex-direction: row;
     padding-right: 50px;
@@ -59,6 +55,7 @@ h3{
 }
 img{
     height: 20px; 
+    
 }
 .right{
     display: flex;
@@ -66,14 +63,69 @@ img{
     padding-right: 18px;
     align-items: center;
     justify-content: flex-start;
+    color:hsl(215, 51%, 70%);
 }
 .person{
     display: flex;
-    justify-content: space-between;
-    padding-left: 18px;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+    border-top: 0.5px solid hsl(215, 51%, 70%);
 }
-h4{
-    font-size: 0.5rem;
-    padding-right: 18px;
+p{
+    font-size: 1rem;
+    padding-left: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
 }
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+a:hover{
+    color:hsl(178, 100%, 50%);
+    transition: all 0.5s ease ;
+    
+}
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nft {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 18rem;
+    min-height: 17rem;
+    margin-top: 10px;
+    border-radius: 1.5rem;
+    height: 0px;
+}
+.hover-view {
+    position: absolute;
+    z-index: 1;
+    height: 0px;
+    width: 100%;
+    
+    border-radius: 1.5rem;
+}
+.view{
+    opacity: 0;
+    transform: translateX(47%);
+    object-fit: scale-down;
+    object-position: center center;
+    border-radius: 0.095rem;
+}
+.images:hover .view{
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, .5);
+    transition: all 0.7s ease;
+    transform: scale(14.25, 13.3);
+    margin-top: -5px; 
+}
+
